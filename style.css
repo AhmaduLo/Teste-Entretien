@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---+----------------format mobile----------------------- */
+@media screen and (max-width: 800px) {
+  header {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+  }
+
+  .container_header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* box-shadow: 0px 1px 0px 0px #8a89894d; */
+  }
+
+  /* ---------------parti menu burger et logo------------------------------------- */
+  .menu_burger_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 55%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu_burger {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 15;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menu_burger .line {
+    width: 100%;
+    height: 3px;
+    background: rgb(117, 117, 117);
+    transition: transform 0.2s ease, opacity 0.2s ease, top 0.2s ease 0.2s;
+    position: relative;
+  }
+
+  .line:nth-child(1) {
+    top: -3px;
+  }
+  .line:nth-child(3) {
+    top: 3px;
+  }
+
+  /* ---------------animation menu burger------------------------------------- */
+  .menu_burger.menu-anim .line:nth-child(1) {
+    top: 3px;
+    transform: rotate(45deg);
+    transition: top 0.2s ease, transform 0.2s ease 0.2s;
+  }
+
+  .menu_burger.menu-anim .line:nth-child(2) {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .menu_burger.menu-anim .line:nth-child(3) {
+    top: -3px;
+    transform: rotate(-45deg);
+    transition: top 0.2s ease, transform 0.2s ease 0.2s;
+  }
+
+  .logo {
+    font-weight: bold;
+  }
+
+  /* ---------------parti panier et photo profil------------------------------------- */
+  .panier_photo {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .panier {
+    font-size: 20px;
+  }
+
+  .photo_profil {
+    width: 50%;
+  }
+
+  .photo_profil img {
+    width: 100%;
+    height: 100%;
+    clip-path: circle();
+  }
+
+  /* ---+----------------partie section----------------------- */
+
+  section{
+    
+    margin-bottom: 25px;
+  }
+
+  .container_section{
+      /* background-color: aqua; */
+  }
+  .picture{
+
+  }
+  .container_picture{
+
+  }
+
+  .picture_article{
+      width: 100%;
+  }
+  .picture_article img{
+      width: 100%;
+      height: 100%;
+  }
+
+  .pictures_article_position{
+      display: none;
+  }
+
+  
+  /* ---------------------partie integration description---------------------------------- */
+  .description_picture {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .description_container{ 
+    width: 75%;
+ }
+ .title1 {
+   font-size: 11px;
+   color: orange;
+   font-weight: bold;
+ }
+ .title_h1 {
+   font-size: 15px;
+   margin-bottom: 35px;
+ }
+
+ .paragraphe_description {
+   margin-bottom: 15px;
+   color: rgb(94, 92, 92);
+   font-size: 15px;
+ }
+
+ .detail_prise{
+     display: flex;
+     justify-content: space-between;
+ }
+ .prise_pourcentage {
+   display: flex;
+   justify-content: space-between;
+   width: 25%;
+   margin-bottom: 7px;
+ }
+ .prise_pourcentage {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    margin-bottom: 7px;
+  }
+
+  .prise_pourcentage .prise {
+    font-weight: bold;
+    font-size: 21px;
+  }
+  .prise_pourcentage .pourcentage{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      font-weight: bold;
+      width: 33%;
+      color: orange;
+      background-color: rgba(255, 166, 0, 0.226);
+  }
+
+  .ancien_prise{
+      text-decoration: line-through;
+      color: gainsboro;
+      
+  }
+
+  
+  .btns{
+    margin-top: 30px;
+    width: 100%;
+    
+}
+.btns_container{
+    text-align: center; 
+}
+
+.btns .counter{
+    border: none;
+    width: 25px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: orange;
+    font-size: 23px;
+    background-color: rgb(236, 233, 233);
+    transition: 0.5s ease-in-out;
+}
+
+.btns .counter:hover{
+    background-color:orange ;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+.btns input{
+  border: none;
+  font-size: 20px;
+  width: 150px;
+  height: 34px;
+  text-align: center;
+  background-color: rgb(236, 233, 233);
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.btn_buy button{
+margin-top: 15px;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: orange;
+  border: none;
+  box-shadow: 0 2px 12px 2px orange;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.btn_buy button:hover{
+  box-shadow: 0 10px 15px 3px  orange;
+  transition: 0.5s ease-in-out;
+}
+
+.btn_buy button i{
+    margin-right: 5px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---+----------------format destop----------------------- */
+@media screen and (min-width: 800px) {
+  .menu_burger {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+  }
+  .container_header {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 1px 0px 0px #8a89894d;
+  }
+
+  .menu_burger_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
+
+  /* .menu {
+    margin-left: 15px;
+  } */
+
+  .menu ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .menu ul li {
+    margin: 15px;
+    color: gray;
+    cursor: pointer;
+  }
+
+  .panier_photo {
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .photo_profil {
+    width: 50%;
+  }
+
+  .photo_profil img {
+    width: 100%;
+    height: 100%;
+    clip-path: circle();
+  }
+
+  /* ---------------------partie section---------------------------------- */
+
+  section {
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container_section {
+    width: 90%;
+    display: flex;
+  }
+
+  /* ---------------------partie integration images---------------------------------- */
+  .picture {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container_picture {
+    width: 50%;
+  }
+  .picture_article {
+    width: 100%;
+  }
+
+  .picture_article img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .pictures_article_position {
+    display: flex;
+  }
+
+  .small_img {
+    margin: 15px;
+  }
+
+  .pictures_article_position {
+    width: 110%;
+  }
+
+  .pictures_article_position img {
+    width: 100%;
+    height: 100%;
+  }
+  /* ---------------------partie integration description---------------------------------- */
+  .description_picture {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .description_container{
+     
+     width: 65%;
+     
+  }
+  .title1 {
+    font-size: 11px;
+    color: orange;
+    font-weight: bold;
+  }
+  .title_h1 {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+
+  .paragraphe_description {
+    margin-bottom: 15px;
+    color: rgb(94, 92, 92);
+    font-size: 15px;
+  }
+
+  .prise_pourcentage {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin-bottom: 7px;
+  }
+
+  .prise_pourcentage .prise {
+    font-weight: bold;
+    font-size: 21px;
+  }
+  .prise_pourcentage .pourcentage{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      font-weight: bold;
+      width: 33%;
+      color: orange;
+      background-color: rgba(255, 166, 0, 0.226);
+  }
+
+  .ancien_prise{
+      text-decoration: line-through;
+      color: gainsboro;
+      
+  }
+
+  .btns{
+      align-items: center;
+      margin-top: 30px;
+      width: 130%;
+  }
+
+  .btns_container{
+      display: flex;
+     
+  }
+
+  .btn_counter-border{
+      background-color: rgb(236, 233, 233);
+      display: flex;
+      justify-content: center;
+      height: 40px;
+      
+  }
+
+  .btns .counter{
+      border: none;
+      width: 50px;
+      cursor: pointer;
+      border-radius: 5px;
+      color: orange;
+      font-size: 23px;
+      transition: 0.5s ease-in-out;
+      background-color: rgb(236, 233, 233);
+  }
+
+  .btns .counter:hover{
+      background-color:orange ;
+      color: black;
+      transition: 0.5s ease-in-out;
+  }
+
+  .btns input{
+    border: none;
+    font-size: 20px;
+    width: 85px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: rgb(236, 233, 233);
+  }
+
+  .btn_buy button{
+    margin-left: 15px;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: orange;
+    border: none;
+    box-shadow: 0 2px 12px 2px orange;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+
+  .btn_buy button:hover{
+    box-shadow: 0 10px 15px 3px  orange;
+    transition: 0.5s ease-in-out;
+  }
+
+  .btn_buy button i{
+      margin-right: 5px;
+  }
+
+}
