@@ -105,34 +105,36 @@
 
   /* ---+----------------partie section----------------------- */
 
-  section{
-    
+  section {
     margin-bottom: 25px;
   }
 
-  .container_section{
-      /* background-color: aqua; */
+  .module {
+    display: none;
+  }
+
+  /* .container_section{
+      
   }
   .picture{
 
   }
   .container_picture{
 
+  } */
+
+  .picture_article {
+    width: 100%;
+  }
+  .picture_article img {
+    width: 100%;
+    height: 100%;
   }
 
-  .picture_article{
-      width: 100%;
-  }
-  .picture_article img{
-      width: 100%;
-      height: 100%;
+  .pictures_article_position {
+    display: none;
   }
 
-  .pictures_article_position{
-      display: none;
-  }
-
-  
   /* ---------------------partie integration description---------------------------------- */
   .description_picture {
     display: flex;
@@ -140,36 +142,36 @@
     margin-top: 25px;
   }
 
-  .description_container{ 
+  .description_container {
     width: 75%;
- }
- .title1 {
-   font-size: 11px;
-   color: orange;
-   font-weight: bold;
- }
- .title_h1 {
-   font-size: 15px;
-   margin-bottom: 35px;
- }
+  }
+  .title1 {
+    font-size: 11px;
+    color: orange;
+    font-weight: bold;
+  }
+  .title_h1 {
+    font-size: 15px;
+    margin-bottom: 35px;
+  }
 
- .paragraphe_description {
-   margin-bottom: 15px;
-   color: rgb(94, 92, 92);
-   font-size: 15px;
- }
+  .paragraphe_description {
+    margin-bottom: 15px;
+    color: rgb(94, 92, 92);
+    font-size: 15px;
+  }
 
- .detail_prise{
-     display: flex;
-     justify-content: space-between;
- }
- .prise_pourcentage {
-   display: flex;
-   justify-content: space-between;
-   width: 25%;
-   margin-bottom: 7px;
- }
- .prise_pourcentage {
+  .detail_prise {
+    display: flex;
+    justify-content: space-between;
+  }
+  .prise_pourcentage {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    margin-bottom: 7px;
+  }
+  .prise_pourcentage {
     display: flex;
     justify-content: space-between;
     width: 55%;
@@ -180,34 +182,31 @@
     font-weight: bold;
     font-size: 21px;
   }
-  .prise_pourcentage .pourcentage{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 14px;
-      font-weight: bold;
-      width: 33%;
-      color: orange;
-      background-color: rgba(255, 166, 0, 0.226);
+  .prise_pourcentage .pourcentage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    width: 33%;
+    color: orange;
+    background-color: rgba(255, 166, 0, 0.226);
   }
 
-  .ancien_prise{
-      text-decoration: line-through;
-      color: gainsboro;
-      
+  .ancien_prise {
+    text-decoration: line-through;
+    color: gainsboro;
   }
 
-  
-  .btns{
+  .btns {
     margin-top: 30px;
     width: 100%;
-    
-}
-.btns_container{
-    text-align: center; 
-}
+  }
+  .btns_container {
+    text-align: center;
+  }
 
-.btns .counter{
+  .btns .counter {
     border: none;
     width: 25px;
     height: 35px;
@@ -217,62 +216,46 @@
     font-size: 23px;
     background-color: rgb(236, 233, 233);
     transition: 0.5s ease-in-out;
-}
+  }
 
-.btns .counter:hover{
-    background-color:orange ;
+  .btns .counter:hover {
+    background-color: orange;
     color: black;
     transition: 0.5s ease-in-out;
-}
+  }
 
-.btns input{
-  border: none;
-  font-size: 20px;
-  width: 150px;
-  height: 34px;
-  text-align: center;
-  background-color: rgb(236, 233, 233);
-  margin-left: -5px;
-  margin-right: -5px;
-}
+  .btns input {
+    border: none;
+    font-size: 20px;
+    width: 150px;
+    height: 34px;
+    text-align: center;
+    background-color: rgb(236, 233, 233);
+    margin-left: -5px;
+    margin-right: -5px;
+  }
 
-.btn_buy button{
-margin-top: 15px;
-  height: 40px;
-  width: 200px;
-  border-radius: 5px;
-  background-color: orange;
-  border: none;
-  box-shadow: 0 2px 12px 2px orange;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-}
+  .btn_buy button {
+    margin-top: 15px;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: orange;
+    border: none;
+    box-shadow: 0 2px 12px 2px orange;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
 
-.btn_buy button:hover{
-  box-shadow: 0 10px 15px 3px  orange;
-  transition: 0.5s ease-in-out;
-}
+  .btn_buy button:hover {
+    box-shadow: 0 10px 15px 3px orange;
+    transition: 0.5s ease-in-out;
+  }
 
-.btn_buy button i{
+  .btn_buy button i {
     margin-right: 5px;
+  }
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ---+----------------format destop----------------------- */
 @media screen and (min-width: 800px) {
@@ -338,6 +321,59 @@ margin-top: 15px;
     justify-content: center;
     align-items: center;
   }
+  /* -------------------------css du module---------------------------------- */
+  .module {
+    position: absolute;
+    width: 100%;
+    height: 115%;
+    background-color: rgba(0, 0, 0, 0.747);
+    display: none;
+  }
+
+  .module.active_module {
+    display: block;
+  }
+  .container_module {
+    border: 1px solid;
+    height: 115vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .remove_module {
+    float: right;
+    position: relative;
+    left: -10%;
+    margin-top: -30px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .module .picture .container_picture .picture_article {
+    width: 90%;
+  }
+  .fleche {
+    position: absolute;
+    top: 45%;
+    margin: -15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(238, 238, 238);
+    border: 1px solid wheat;
+  }
+
+  .fleche p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .module .picture .container_picture .pictures_article_position {
+    width: 85%;
+  }
 
   .container_section {
     width: 90%;
@@ -356,6 +392,7 @@ margin-top: 15px;
   }
   .picture_article {
     width: 100%;
+    cursor: pointer;
   }
 
   .picture_article img {
@@ -373,12 +410,18 @@ margin-top: 15px;
   }
 
   .pictures_article_position {
-    width: 110%;
+    width: 100%;
   }
 
   .pictures_article_position img {
+    cursor: pointer;
+    border-radius: 10px;
     width: 100%;
     height: 100%;
+  }
+
+  .pictures_article_position img:hover {
+    border: 1px solid orange;
   }
   /* ---------------------partie integration description---------------------------------- */
   .description_picture {
@@ -386,10 +429,8 @@ margin-top: 15px;
     display: flex;
     align-items: center;
   }
-  .description_container{
-     
-     width: 65%;
-     
+  .description_container {
+    width: 65%;
   }
   .title1 {
     font-size: 11px;
@@ -418,60 +459,57 @@ margin-top: 15px;
     font-weight: bold;
     font-size: 21px;
   }
-  .prise_pourcentage .pourcentage{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 14px;
-      font-weight: bold;
-      width: 33%;
-      color: orange;
-      background-color: rgba(255, 166, 0, 0.226);
+  .prise_pourcentage .pourcentage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    width: 33%;
+    color: orange;
+    background-color: rgba(255, 166, 0, 0.226);
   }
 
-  .ancien_prise{
-      text-decoration: line-through;
-      color: gainsboro;
-      
+  .ancien_prise {
+    text-decoration: line-through;
+    color: gainsboro;
   }
 
-  .btns{
-      align-items: center;
-      margin-top: 30px;
-      width: 130%;
+  .btns {
+    align-items: center;
+    margin-top: 30px;
+    width: 130%;
   }
 
-  .btns_container{
-      display: flex;
-     
+  .btns_container {
+    display: flex;
   }
 
-  .btn_counter-border{
-      background-color: rgb(236, 233, 233);
-      display: flex;
-      justify-content: center;
-      height: 40px;
-      
+  .btn_counter-border {
+    background-color: rgb(236, 233, 233);
+    display: flex;
+    justify-content: center;
+    height: 40px;
   }
 
-  .btns .counter{
-      border: none;
-      width: 50px;
-      cursor: pointer;
-      border-radius: 5px;
-      color: orange;
-      font-size: 23px;
-      transition: 0.5s ease-in-out;
-      background-color: rgb(236, 233, 233);
+  .btns .counter {
+    border: none;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: orange;
+    font-size: 23px;
+    transition: 0.5s ease-in-out;
+    background-color: rgb(236, 233, 233);
   }
 
-  .btns .counter:hover{
-      background-color:orange ;
-      color: black;
-      transition: 0.5s ease-in-out;
+  .btns .counter:hover {
+    background-color: orange;
+    color: black;
+    transition: 0.5s ease-in-out;
   }
 
-  .btns input{
+  .btns input {
     border: none;
     font-size: 20px;
     width: 85px;
@@ -480,7 +518,7 @@ margin-top: 15px;
     background-color: rgb(236, 233, 233);
   }
 
-  .btn_buy button{
+  .btn_buy button {
     margin-left: 15px;
     height: 40px;
     width: 200px;
@@ -492,13 +530,12 @@ margin-top: 15px;
     transition: 0.5s ease-in-out;
   }
 
-  .btn_buy button:hover{
-    box-shadow: 0 10px 15px 3px  orange;
+  .btn_buy button:hover {
+    box-shadow: 0 10px 15px 3px orange;
     transition: 0.5s ease-in-out;
   }
 
-  .btn_buy button i{
-      margin-right: 5px;
+  .btn_buy button i {
+    margin-right: 5px;
   }
-
 }
