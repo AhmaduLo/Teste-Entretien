@@ -112,6 +112,7 @@
   .module {
     display: none;
   }
+  
 
   /* .container_section{
       
@@ -125,6 +126,24 @@
 
   .picture_article {
     width: 100%;
+    position: relative;
+  }
+
+  .fleche_mobile{
+    position: absolute;
+    top: 45%;
+    margin: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(238, 238, 238);
+    border: 1px solid wheat;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .fleche_mobile:nth-child(3){
+    margin-left: -50px;
   }
   .picture_article img {
     width: 100%;
@@ -352,6 +371,9 @@
   }
   .module .picture .container_picture .picture_article {
     width: 90%;
+  }
+  .fleche_mobile{
+    display: none;
   }
   .fleche {
     position: absolute;
